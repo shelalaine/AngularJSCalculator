@@ -14,25 +14,9 @@ import {TranslateService} from 'ng2-translate';
 })
 export class FilterExamplePage {
 
-  public instructions = [
-      "This calculator supports the following operations:\n \
-                    - Addition ('+') \n \
-                    - Subtraction ('-') \n \
-                    - Multiplication ('x') \n \
-                    - Division ('÷')"
-      ,
-      "Kani nga calculator nag suporta sa aning mga operasyon:\n\
-                    - Addition ('+') \n \
-                    - Subtraction ('-') \n \
-                    - Multiplication ('x') \n \
-                    - Division ('÷')",
-
-
-  ];
   languages: string[] = ["en", "ceb"]
   language: number
-  languageStrSelected = "en"
-  instruction:string = this.instructions[this.languages.indexOf(this.languageStrSelected)]
+  languageStrSelected: string = "en"
   translate: TranslateService
   
   constructor(public navCtrl: NavController, 
