@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {TranslateService} from 'ng2-translate';
 
 /*
   Generated class for the FilterExample page.
@@ -22,23 +23,33 @@ export class FilterExamplePage {
       ,
       "Kani nga calculator nag suporta sa aning mga operasyon:\n\
                     - Addition ('+') \n \
-                    - Subtraction ('-') <br> \
+                    - Subtraction ('-') \n \
                     - Multiplication ('x') \n \
-                    - Division ('÷')"
+                    - Division ('÷')",
+
+
   ];
-  languages: string[] = ["English", "Cebuano"]
+  languages: string[] = ["en", "ceb"]
   language: number
   languageStrSelected = "English"
   instruction:string = this.instructions[this.languages.indexOf(this.languageStrSelected)]
+  translate: TranslateService
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams,
+              translate:TranslateService) {
+                
+                this.translate = translate
+                translate.setDefaultLang('en')
+              }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FilterExamplePage');
   }
 
   setInstruction(value) {
-      this.instruction = this.instructions[this.languages.indexOf(value)]
+      // this.instruction = this.instructions[this.languages.indexOf(value)]
+      this.translate.setDefaultLang(value)
   }
 
 }
