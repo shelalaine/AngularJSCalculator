@@ -14,7 +14,7 @@ import {TranslateService} from 'ng2-translate';
 })
 export class FilterExamplePage {
 
-  languages: string[] = ["en", "ceb", "zh"]
+  languages: string[] = ["en", "ceb", "zh", "pt"]
   language: number
   languageStrSelected: string = "en"
   translate: TranslateService
