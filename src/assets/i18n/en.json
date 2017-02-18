@@ -1,3 +1,21 @@
 {
-    "INSTRUCTIONS":"This calculator supports the following operations:<br>Addition ('+')"
+    "INSTRUCTIONS":"This calculator supports the following <br>Addition ('+')"
 }
+
+
+This calculator supports the following operations:\n \
+                   - Addition ('+') \n \
+                   - Subtraction ('-') \n \
+                   - Multiplication ('x') \n \
+                   - Division ('÷')\  
+                   - Pi ('π')
+                   - Reset ('AC')
+                   - Square Root ('√')
+                   - Percentage ('%')
+
+                   Example:
+
+                   Addition: 1 + 1 + 1 + 5 = 8
+                   Subtraction: 12 - 2 = 10
+                   Multiplication: 3 x 3 x 10 = 90
+                   Division: 1000 / 200 = 5
