@@ -31,7 +31,7 @@ export class FilterExamplePage {
   ];
   languages: string[] = ["en", "ceb"]
   language: number
-  languageStrSelected = "English"
+  languageStrSelected = "en"
   instruction:string = this.instructions[this.languages.indexOf(this.languageStrSelected)]
   translate: TranslateService
   
