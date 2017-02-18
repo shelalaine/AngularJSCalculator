@@ -7,34 +7,81 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding >
+<ion-content class="center-vertical" padding >
   <p>
      Expression: {{display}}
   </p>
 
-  <button (click)="allClear()" id="AC">AC</button>
-  <button (click)="unaryOperation($event)" id="√">√</button>
-  <button (click)="unaryOperation($event)" id="π">π</button>
-  <button (click)="unaryOperation($event)" id="%">%</button><br>
-
-  <button (click)="click($event)" id="7">7</button>
-  <button (click)="click($event)" id="8">8</button>
-  <button (click)="click($event)" id="9">9</button>
-  <button (click)="operation($event)" id="÷">÷</button><br>
-  
-  <button (click)="click($event)" id="4">4</button>
-  <button (click)="click($event)" id="5">5</button>
-  <button (click)="click($event)" id="6">6</button>
-  <button (click)="operation($event)" id="×">×</button><br>
-  
-  <button (click)="click($event)" id="1">1</button>
-  <button (click)="click($event)" id="2">2</button>
-  <button (click)="click($event)" id="3">3</button>
-  <button (click)="operation($event)" id="-">-</button><br>
-  
-  <button (click)="click($event)" id="0">0</button>
-  <button (click)="click($event)" id=".">.</button>
-  <button (click)="show()">=</button>
-  <button (click)="operation($event)" id="+">+</button><br>
-
+  <div style="margin-top: 50px">
+  <div class="row">
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="allClear()" id="AC">AC</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="unaryOperation($event)" id="√">√</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="unaryOperation($event)" id="π">π</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="unaryOperation($event)" id="%">%</button><br>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="7">7</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="8">8</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="9">9</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="operation($event)" id="÷">÷</button><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="4">4</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="5">5</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="6">6</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="operation($event)" id="×">×</button><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="1">1</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="2">2</button>
+ </div>
+ <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="3">3</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="operation($event)" id="-">-</button><br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id="0">0</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="click($event)" id=".">.</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="show()">=</button>
+  </div>
+  <div class="col col-20 col-offset-10">
+    <button class="button button-light" (click)="operation($event)" id="+">+</button><br>
+  </div>
+  </div>
 </ion-content>
